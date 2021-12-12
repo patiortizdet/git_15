@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="buscador, series, trailer">
+    <!-- Título -->
+    <title> Series - Buscador </title>
+    <!-- Descripción -->
+    <meta name="description" content="Busca las series que te gustaría catalogar, fíltralas por género y de paso échale un vistazo a nuestra recomendación">
+
+    <link rel="stylesheet" href="../css/destino.css">
+</head>
+
+<body>
+    <header class="menuDeSeries">
+        <nav>
+            <ul class="contenedorMenu">
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="actividad.html">
+                    <li>Actividad</li>
+                </a>
+                <a href="series.html">
+                    <li>Series</li>
+                </a>
+                <a href="registrate.html">
+                    <li>Regístrate</li>
+                </a>
+                <a href="iniciasesion.html">
+                    <li>Inicia Sesión</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1 id="h1series">Series</h1>
+    <br>
+    <br>
+
+    <main class="mainSeries">
+
+        <label for="comentario" class="buscador"> Buscar series </label>
+        <br>
+        <textarea name="comentario" cols="20" rows="02"></textarea>
+
+        <input type="submit" value="Buscar">
+        <br>
+        <h2 class="genero">Filtrar por género</h2>
+
+        <select name="genero">
+            <option value="">Género</option>
+            <option value="action">Acción</option>
+            <option value="drama"> Drama </option>
+            <option value="cienciafic"> Ciencia Ficción</option>
+            <option value="comedia"> Comedia </option>
+            <option value="romcom"> Comedia Romántica</option>
+            <option value="documental"> Documental </option>
+            <option value="musical"> Musical </option>
+            <option value="romance"> Romance </option>
+            <option value="thriller"> Terror </option>
+
+        </select>
+        <br>
+        <br>
+        <br>
+        <section class="sugerenciaSeries">
+            <h2 id="h2series"> El trailer que no te deberías perder: </h2>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NqrlWUmpVLg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+@import "medidas";
+
+
+body {
+    background-color: #f1f0f5;
+    font-family: 'Syne', sans-serif;
+}
+
+header {
+    background-color: #d0bde7;
+}
+
+
+h1 {
+    color: #7155cf;
+    text-decoration: dotted;
+}
+
+h2 {
+    color: #a089fa;
+
+}
+
+h3 {
+    color: rebeccapurple;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Encabezado */
+
+.caja {
+    color: #7e8dd9;
+    list-style-type: none;
+    border-style: groove;
+    background-color: #e6c8bd;
+    text-align: center;
+    position: relative;
+
+    li {
+        display: inline;
+        position: relative
+    }
+}
+
+/* Titulos actividad */
+
+.titulo {
+
+    color: #6a5096;
+    text-decoration: underline;
+    line-height: inherit;
+}
+
+
+
+/* Para datos de registro */
+
+.personales {
+
+    color: #250845;
+}
+
+
+.terminos {
+    color: #de2a2a;
+}
+
+.genero {
+
+    color: #a484c2;
+}
+
+.buscador {
+
+    background-color: #ccc5d4;
+}
+
+.parte-comunidad {
+    color:#8f56bc;
+}
+
+/* Fondo fieldset inicio de sesión */
+
+.marco {
+    background: linear-gradient(90deg, rgba(194, 143, 165, 1) 0%, rgba(142, 95, 168, 0.3617646887856705) 100%);
+
+}
+
+.iniciador {
+
+    background-image: url(https://sigueenserie.files.wordpress.com/2015/09/tv-series.jpg);
+    background-size: 500px;
+    text-align: center;
+    animation-name: series_fondo;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+/* Títulos */
+
+.centrados {
+    text-align: center;
+    font-weight: bolder;
+    color: rosybrown;
+}
+
+/* Menu de las páginas que no son el index */
+
+.contenedorMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    color: darkorchid;
+    padding: 10px;
+
+}
+
+.flex-sesion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(194, 143, 165, 1) 0%, rgba(142, 95, 168, 0.3617646887856705) 100%);
+    align-content: space-around;
+}
+
+/* Grid area */
+
+.grid-body {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo menu"
+        "principal principal principal principal"
+        "reciente tendencias actividad"
+        "final final final final";
+    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+}
+
+.añadidoRecientemente {
+    grid-area: reciente;
+}
+
+.tendenciasMomento {
+    grid-area: tendencias;
+}
+
+.actividadAmigos {
+    grid-area: actividad;
+}
+
+.encabezado {
+    grid-area: titulo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.seccion-principal {
+    grid-area: principal
+}
+
+.pieDePagina {
+    grid-area: final;
+}
+
+.gradiente {
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    ;
+}
+
+.grid-div {
+    display: grid;
+    grid-template-areas:
+        "reciente reciente reciente nuevo"
+        "reciente reciente reciente nuevo"
+        "reciente reciente reciente nuevo"
+        "reciente reciente reciente nuevo";
+    grid-template-rows: 100px 100px 100px 50px;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.quizas {
+    grid-area: nuevo;
+}
+
+.actividad-reciente {
+    grid-area: reciente;
+}
+
+.body-registro {
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(186, 148, 233, 0.3617646887856705) 100%);
+}
+
+/* Redes sociales de la página */
+
+/* Extend */
+
+.redSocial {
+    text-decoration: none;
+    background-color: #a89ab2;
+    color: whitesmoke;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 5px;
+    justify-content: right;
+
+}
+
+
+.redSocial--ig {
+    @extend .redSocial;
+    border-color: #dc7ec1;
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+
+.redSocial--tw {
+    @extend .redSocial;
+    border-color: #009de8;
+    background-color: #009de8;
+}
+
+.redSocial--spot {
+    @extend .redSocial;
+    border-color: #3D9970;
+    background-color: #3D9970;
+}
+
+/* BEM */
+
+/* Bloque */
+
+.tabla {
+    border-color: #813357;
+}
+
+/* Elemento */
+
+.tabla__varios {
+    font-size: 14px;
+    color: #2f2c38;
+}
+
+/* Modificador */
+
+.tabla__varios--principal {
+    font-size: 16px;
+    color: #813357;
+
+}
+
+.informacion {
+    margin-left: 950px;
+    font-size: 16px;
+    display: inline-block;
+    justify-content: space-between;
+
+}
+
+/* MAPAS - colección de variables */
+
+$info: (contacto: #2c2b28,
+    about: #d8ccbe,
+    work-with-us: #861a1a,
+    ayuda: #333458);
+
+/* Bucle */
+@each $red,
+$color in $info {
+    .information--#{$red} {
+        color: $color;
+    }
+}
+
+
+
+
+/* Ids */
+
+#h1series {
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(186, 148, 233, 0.3617646887856705) 100%);
+    height: 50px;
+    width: 120px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#uno {
+    background-color: #7e8dd9;
+}
+
+#h2series {
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+#ulactividad {
+    margin-left: 15px;
+}
+
+#h2-actividad {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#h1-actividad {
+    margin-top: 4px;
+    color: #55547f;
+}
+
+
+/* Mobile First */
+@media (max-width: 590px) {
+
+    body {
+        font-size: 0.85rem;
+        justify-content: right;
+    }
+
+    .grid-body {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo menu"
+            "principal principal principal principal"
+            "reciente"
+            "tendencias"
+            "actividad"
+            "final final final final";
+        grid-template-rows: 100px 1fr 1fr 50px;
+        grid-template-columns: 15% auto 15%;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .grid-body {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "principal principal principal principal"
+            "reciente"
+            "tendencias"
+            "actividad"
+            "final final final final";
+        grid-template-rows: 100px 1fr 1fr 50px;
+        grid-template-columns: 15% auto 15%;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+
+    }
+}
+
+/* Computadora */
+@media only screen and (min-width: 1026px) {
+    .gridarea {
+        display: grid;
+        grid-template-areas:
+            "reciente tendencias actividad";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-template-columns: auto auto auto;
+        align-content: center;
+        justify-content: space-evenly;
+        justify-items: center;
+        height: 400px;
+    }
+
+}
+
+@keyframes series_fondo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 2;
+    }
+
+}

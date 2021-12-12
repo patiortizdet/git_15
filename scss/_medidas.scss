@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* Medidas directas - index */
+
+header {
+    padding: 2px;
+}
+
+li {
+    margin-right: 48px;
+}
+
+/* Medidas para clases */
+
+.caja {
+    height: 30px;
+    width: 600px;
+    bottom: 10px;
+    left: 700px;
+}
+
+
+.marco {
+    width: 50vh;
+    height: 50vh;
+    margin-left: 500px;
+}
+
+.tituloDeLaPagina {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.subtituloDelInicio {
+
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    /* background-color: silver;
+    border-style: dashed;
+    border-color: #a089fa; */
+}
+
+.bannerInicial {
+
+    /* text-align: center; lo dejé comentado por si no me quedaba bien con el margin*/
+    /* margin: 15px 12px 10px 350px; */
+    margin-left: 150px;
+    width: 80%;
+    height: 80%;
+}
+
+.fotosIniciales {
+
+    padding-left: 5px;
+}
+
+.tablaActividad {
+    margin-left: 200px;
+}
+
+.parte-comunidad {
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+.registro-fieldset {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.user {
+    margin-left: 15px;
+}
+
+.mainSeries {
+    margin-left: 10px;
+}
+
+.sugerenciaSeries {
+
+    margin-left: 400px;
+}
+
+.datosRegistro {
+    margin-left: 10px;
+}
+
+/* Variable */
+$letras: 24px;
+
+.tituloactividad {
+    font-size: $letras;
+
+}
+
+.letrasactividad {
+    font-size: $letras / 2;
+
+}
+
+#correr {
+    margin-left: 970px;
+}
+
